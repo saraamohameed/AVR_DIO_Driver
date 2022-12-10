@@ -58,19 +58,19 @@ u8 DIO_Set_Pin_dir (u8 Copy_u8_Port_ID, u8 Copy_u8_Pin_ID, u8 Copy_u8_Pin_dir)
 				if((Copy_u8_Pin_dir == MIN_Pin_dir) || (Copy_u8_Pin_dir) == MAX_Pin_dir ){
 					switch (Copy_u8_Port_ID){
 					case GROUP_A :
-						Assign_Bit(DIO_u8_PORTA,Copy_u8_Pin_ID,Copy_u8_Pin_dir);
+						Assign_Bit(DIO_u8_PORTA,Copy_u8_Pin_ID,Copy_u8_Pin_Val);
 						break;
 
 					case GROUP_B :
-						Assign_Bit(DIO_u8_PORTB,Copy_u8_Pin_ID,Copy_u8_Pin_dir);
+						Assign_Bit(DIO_u8_PORTB,Copy_u8_Pin_ID,Copy_u8_Pin_Val);
 						break;
 
 					case GROUP_C :
-						Assign_Bit(DIO_u8_PORTC,Copy_u8_Pin_ID,Copy_u8_Pin_dir);
+						Assign_Bit(DIO_u8_PORTC,Copy_u8_Pin_ID,Copy_u8_Pin_Val);
 						break;
 
 					case GROUP_D :
-						Assign_Bit(DIO_u8_PORTD,Copy_u8_Pin_ID,Copy_u8_Pin_dir);
+						Assign_Bit(DIO_u8_PORTD,Copy_u8_Pin_ID,Copy_u8_Pin_Val);
 						break;
 					}
 				}else{
